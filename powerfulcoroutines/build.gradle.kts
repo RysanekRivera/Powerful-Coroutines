@@ -9,6 +9,12 @@ android {
     namespace = "io.github.rysanekrivera.powerfulcoroutines"
     compileSdk = 34
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+
     defaultConfig {
 
         aarMetadata {
@@ -76,38 +82,16 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
 
-publishing {
-
-    publications {
-        create<MavenPublication>("releaseAar") {
-            groupId = "io.github.rysanekrivera"
-            artifactId ="powerful-coroutines"
-            version = "1.0.0"
-
-            pom {
-                name.set("Powerful Coroutines")
-                description.set("This library enhances the power of coroutines and intends to enhance it's power by having better error handling, being network aware, waiting for the internet connection before executing the calls and also doing all these things and being lifecycle aware and memory efficient.")
-                url.set("https://github.com/rysanekrivera/PowerfulCoroutines")
-
-                licenses {
-                    license {
-                        name.set("Apache-2.0") // Replace with your license
-                        url.set("https://www.apache.org/licenses/LICENSE-2.0")
-                    }
-                }
-
-                developers {
-                    developer{
-                        id.set("RysanekRivera")
-                        name.set("Rysanek Rivera")
-                        email.set("rysanekmobiledeveloper@gmail.com")
-                    }
-                }
+afterEvaluate {
+    publishing {
+        publications {
+            register<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.RysanekRivera"
+                artifactId = "Powerful-Coroutines"
+                version = "1.0.0"
             }
         }
     }
-
-    repositories {
-      mavenCentral()
-    }
 }
+
