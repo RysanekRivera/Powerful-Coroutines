@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 ```
 
-2. Add this dependency in the 
+2. Add this dependency
 ```
 dependencies {
   implementation 'com.github.RysanekRivera:Powerful-Coroutines:$latestVersion'
