@@ -1,4 +1,4 @@
-package com.example.network.request
+package io.github.rysanekrivera.powerfulcoroutines.request
 
 import android.util.Log
 import androidx.compose.runtime.Composable

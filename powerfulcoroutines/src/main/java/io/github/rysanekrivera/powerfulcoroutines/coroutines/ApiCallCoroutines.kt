@@ -9,8 +9,8 @@ import io.github.rysanekrivera.powerfulcoroutines.connectivity.ConnectivityObser
 import io.github.rysanekrivera.powerfulcoroutines.connectivity.RegisterNetworkListener
 import io.github.rysanekrivera.powerfulcoroutines.connectivity.errors.NetworkListenerNotRegistered
 import io.github.rysanekrivera.powerfulcoroutines.coroutines.errors.NoNetworkConnectionException
-import com.example.network.request.NetworkRequest
-import com.example.network.request.processResponse
+import io.github.rysanekrivera.powerfulcoroutines.request.NetworkRequest
+import io.github.rysanekrivera.powerfulcoroutines.request.processResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.flow.MutableStateFlow

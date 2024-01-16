@@ -10,7 +10,7 @@ import io.github.rysanekrivera.powerfulcoroutines.connectivity.RegisterNetworkLi
 import io.github.rysanekrivera.powerfulcoroutines.connectivity.RegisterNetworkListener.isNetworkListenerRegistered
 import io.github.rysanekrivera.powerfulcoroutines.connectivity.errors.NetworkListenerNotRegistered
 import io.github.rysanekrivera.powerfulcoroutines.coroutines.errors.NoNetworkConnectionException
-import com.example.network.request.NetworkRequest
+import io.github.rysanekrivera.powerfulcoroutines.request.NetworkRequest
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Deferred

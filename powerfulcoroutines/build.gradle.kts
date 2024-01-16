@@ -89,7 +89,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.RysanekRivera"
                 artifactId = "Powerful-Coroutines"
-                version = "1.0.2"
+                version = "1.0.3"
             }
         }
     }

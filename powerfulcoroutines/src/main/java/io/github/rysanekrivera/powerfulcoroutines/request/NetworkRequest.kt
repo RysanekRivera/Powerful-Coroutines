@@ -1,4 +1,4 @@
-package com.example.network.request
+package io.github.rysanekrivera.powerfulcoroutines.request
 
 import com.google.gson.Gson
 import retrofit2.Response
