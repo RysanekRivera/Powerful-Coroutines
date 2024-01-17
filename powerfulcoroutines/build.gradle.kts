@@ -83,13 +83,17 @@ dependencies {
 }
 
 afterEvaluate {
+
     publishing {
         publications {
-            register<MavenPublication>("release") {
+            create<MavenPublication>("release") {
                 from(components["release"])
+
                 groupId = "com.github.RysanekRivera"
                 artifactId = "Powerful-Coroutines"
-                version = "1.0.3"
+                version = "1.0.0"
+
+                artifact("$buildDir/outputs/aar/powerfulcoroutines-release.aar")
             }
         }
     }
