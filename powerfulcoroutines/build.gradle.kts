@@ -91,7 +91,7 @@ afterEvaluate {
 
                 groupId = "com.github.RysanekRivera"
                 artifactId = "Powerful-Coroutines"
-                version = "1.0.0"
+                version = "1.0.4"
 
             }
         }
