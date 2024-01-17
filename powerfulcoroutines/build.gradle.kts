@@ -93,7 +93,6 @@ afterEvaluate {
                 artifactId = "Powerful-Coroutines"
                 version = "1.0.0"
 
-                artifact("$buildDir/outputs/aar/powerfulcoroutines-release.aar")
             }
         }
     }
